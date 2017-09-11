@@ -13,7 +13,7 @@ class MyHash
   def myStore(key, val)
     index = hashFunction(key)
     if (@arr[index] === nil)
-    @arr.insert(index, [])
+    @arr[index] = []
     @arr[index].push([key, val])
     else
       @arr[index].push([key, val])
